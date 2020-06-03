@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <title>Flip Me</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <img src="./assets/img/af.png" alt="Logo" class="logo">
+        <div class="row">
+            <div class="time">
+                <strong>Time: <span id="time-remaining">60</span></strong>
+                <strong>Flips: <span id="flip">0</span></strong>
+            </div>
+        </div>
+        <div class="row" id="board">
+            <div class="board">
+                <div class="cards" data-framework="1">
+                    <img class="front-face" src="assets/img/01.png" alt="01" />
+                    <img class="back-face" src="assets/img/cf.jpeg" alt="bgc" />
+                </div>
+                <div class="cards" data-framework="1">
+                    <img class="front-face" src="assets/img/01.png" alt="01" />
+                    <img class="back-face" src="assets/img/cf.jpeg" alt="bgc" />
+                </div>
+
+                <div class="cards" data-framework="2">
+                    <img class="front-face" src="assets/img/02.png" alt="02" />
+                    <img class="back-face" src="assets/img/cf.jpeg" alt="bgc" />
+                </div>
+                <div class="cards" data-framework="2">
+                    <img class="front-face" src="assets/img/02.png" alt="02" />
+                    <img class="back-face" src="assets/img/cf.jpeg" alt="bgc" />
+                </div>
+
+                <div class="cards" data-framework="3">
+                    <img class="front-face" src="assets/img/03.png" alt="03" />
+                    <img class="back-face" src="assets/img/cf.jpeg" alt="bgc" />
+                </div>
+                <div class="cards" data-framework="3">
+                    <img class="front-face" src="assets/img/03.png" alt="03" />
+                    <img class="back-face" src="assets/img/cf.jpeg" alt="bgc" />
+                </div>
+
+                <div class="cards" data-framework="4">
+                    <img class="front-face" src="assets/img/04.png" alt="04" />
+                    <img class="back-face" src="assets/img/cf.jpeg" alt="bgc" />
+                </div>
+                <div class="cards" data-framework="4">
+                    <img class="front-face" src="assets/img/04.png" alt="04" />
+                    <img class="back-face" src="assets/img/cf.jpeg" alt="bgc" />
+                </div>
+
+                <div class="cards" data-framework="5">
+                    <img class="front-face" src="assets/img/05.png" alt="05" />
+                    <img class="back-face" src="assets/img/cf.jpeg" alt="bgc" />
+                </div>
+                <div class="cards" data-framework="5">
+                    <img class="front-face" src="assets/img/05.png" alt="05" />
+                    <img class="back-face" src="assets/img/cf.jpeg" alt="bgc" />
+                </div>
+
+                <div class="cards" data-framework="6">
+                    <img class="front-face" src="assets/img/06.png" alt="06" />
+                    <img class="back-face" src="assets/img/cf.jpeg" alt="bgc" />
+                </div>
+                <div class="cards" data-framework="6">
+                    <img class="front-face" src="assets/img/06.png" alt="06" />
+                    <img class="back-face" src="assets/img/cf.jpeg" alt="bgc" />
+                </div>
+            </div>
+        </div>
+
+        <p id="artName"></p>
+        <p id="inst">We've put an arsty spin on your classic memory game.<br/>Flip the cards and put your memory to test!</p>
+
+        <div class="row justify-content-around" id="end">
+            <div class="col-12 p-1 pb-3 text-center">
+                <p class='content' id="content">Content!</p>
+                <p class="flips-matches">Flips: <span id="flips">0</span></p>
+                <p class="flips-matches" id="hd">Matches: <span id="match">6/6</span></p>
+                <div class="flex-column">
+                    <a href="./index.html" class="btn btn-dark btn-lg" style="margin-top: 6rem;">
+                        Restart
+                    </a>
+                    <a href="https://www.artfervour.com/af-games" class="btn btn-dark btn-lg" style="margin-top: 1rem;">
+                        Play More Games
+                    </a>
+                    <a href="https://arthangman.netlify.app/" class="btn btn-dark btn-lg" style="margin-top: 1rem;">
+                        Play Art Hangman
+                    </a>
+                </div>
+                <div class="results-social">
+                    <div id="social-text">Did you like the quiz? Share your results with your friends, so they can give it a shot!
+                    </div>
+                    <div class="icon-container">
+                      <a href="whatsapp://send?text=https://guesstheartist.netlify.com/">
+                        <img src="./assets/img/fb-logo-black-circle.png" style="height: 34px; width: 34px; display: inline-block; margin-top: 0px; margin-right: 24px;" alt=""></a><a href="https://www.facebook.com/sharer/sharer.php?u=https://guesstheartist.netlify.com/">
+                        <img src="./assets/img/whatsapp.png" style="height: 32px; width: 32px; display: inline-block; margin-top: 0px" alt=""></a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/play.js"></script>
+</body>
+
+</html>

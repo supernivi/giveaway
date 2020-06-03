@@ -1,0 +1,136 @@
+*, ::after, ::before{
+    box-shadow: none !important;
+}
+
+body {
+    background: #FFF;
+}
+
+.board {
+    width: 540px;
+    height: 440px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+}
+
+.time {
+    width: 520px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    perspective: 1000px;
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+    margin-top: 32px;
+}
+
+.cards {
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+}
+
+.cards:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+}
+
+.cards.flip {
+    transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+    width: 100%;
+    height: 100%;
+    padding: 4px;
+    position: absolute;
+    border-radius: 12px;
+    /* background: #019787; */
+    backface-visibility: hidden;
+}
+
+.front-face {
+    transform: rotateY(180deg);
+}
+
+.logo {
+    margin: 0 auto;
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 36px;
+    height: 72px;
+    padding-top: 20px;
+}
+
+.content{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.flips-matches{
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    margin: 0 auto;
+}
+
+#artName{
+    text-align: center;
+    margin-top: 4rem;
+    font-weight: 500;
+}
+
+#inst{
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 1.4rem;
+    font-weight: 400;
+}
+
+.results-social {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: medium;
+    text-align: center;
+    justify-content: center;
+    clear: both;
+    padding-top: 140px;
+}
+
+#social-text{
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px){
+    .board{
+        height: 340px;
+    }
+    .time{
+        justify-content: space-evenly;
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+    }
+}
